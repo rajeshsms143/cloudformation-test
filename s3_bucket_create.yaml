@@ -3,11 +3,12 @@ AWSTemplateFormatVersion: "2010-09-09"
 
 Description: This is for s3 bucket creation testing purpose
 Resources:
-  Type: AWS::S3::Bucket
-  Properties:
-    BucketName: raj9553-cloudformation-test
-    Tags: 
-      - Key: test-key
-        Value: test-value
+  testS3bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: raj9553-cloudformation-test
+      Tags: 
+        - Key: test-key
+          Value: test-value
 
 
